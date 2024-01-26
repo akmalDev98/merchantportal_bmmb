@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>BMMB Merchant Portal - Profile</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="../stylesheet/profilepage.css"> <!-- Import the CSS file -->
+
+    <!-- Add any additional stylesheets or scripts here -->
+    <style>
+        
+     
+    </style>
+</head>
+<body>
+
+<!-- Sidebar -->
+<div class="sidebar">
+
+    <img class="img-fluid mx-auto d-block rounded-image mb-4" src="../assets/new_bmmb_eng_logo.png">
+    
+    <a href="#" onclick="loadContent('sidebar_menu/homepage.html')">
+        <div class="vertical-center">
+            <img src="../assets/home.png" alt="Home Icon" width="20" height="20">
+            <span class="ml-2">Home</span>
+        </div>
+    </a>
+
+    <a href="#">
+        <div class="vertical-center">
+            <img src="../assets/transaction.png" alt="Transaction Icon" width="20" height="20">
+            <span class="ml-2">Transactions</span>
+        </div>
+    </a>
+
+    <a href="#" class="active">
+        <div class="vertical-center">
+            <img src="../assets/profile.png" alt="Profile Icon" width="20" height="20">
+            <span class="ml-2">Profile</span>
+        </div>
+    </a>
+
+    <a href="#">
+        <div class="vertical-center">
+            <img src="../assets/payment.png" alt="Payment Icon" width="20" height="20">
+            <span class="ml-2">Payment Link</span>
+        </div>
+    </a>
+    
+</div>
+
+<!-- Content -->
+<div class="content">
+
+    <!-- HEADER GRADIENT -->
+    
+    <div class="gradient-container">
+        <!-- Search Input -->
+        <input type="text" class="search-input" placeholder="Search...">
+
+        <div class="container" style="flex: 1;"></div>
+
+        <!-- Profile & Logout -->
+        <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                <img src="../assets/profile.png" alt="Profile Icon" width="25" height="25" style="margin-right: 10px;">
+                <span class="me-2">RaniaBoutique</span> <!-- Add spacing between text and icon -->
+               
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+              <li><a class="dropdown-item" href="#">Logout</a></li>
+            </ul>
+        </div>
+
+        
+          
+    </div>
+   
+
+   
+    <!-- TITLE -->
+    <div class="mt-5">
+        <div class="row">
+             <!-- TITLE -->
+             <h4 style="color: #022F86; font-family: 'Montserrat', sans-serif; font-weight: bold; font-size: 32px; margin-left: 30px;">Bank Muamalat Merchant Portal</h4>
+        </div>
+    </div>
+
+
+    
+    
+    <!-- PROFILE CONTAINER -->
+
+
+    <div class="row">
+        <div class="col-7">
+            <div class="container mt-4 white-rounded-container" style="margin-left: 30px; padding: 15px;">
+                <!-- Title: Personal Details -->
+                <h5 class="mb-3">Personal Details</h5>
+            
+                <!-- Grey Line -->
+                <hr class="mb-4">
+            
+                <!-- Row with Column: Icon Profile and Profile Name -->
+                <div class="row" style="padding: 15px;">
+                    <div class="col-2">
+                        <!-- Icon Profile (using a placeholder user icon) -->
+                        <img src="../assets/profile-icon.png" alt="Profile Icon" >
+                    </div>
+                    <div class="col-4">
+                        <!-- Profile Name -->
+                        <p class="mb-3">Rania Boutique</p>
+                        <p class="custom-quick-stat-p mb-0" style="font-weight: normal; font-size: 14px; color: grey;">MID : 100566049932571</p>
+                        <p class="custom-quick-stat-p" style="font-weight: normal; font-size: 14px; color: grey;">Acc No : 41412321123113</p>
+                    </div>
+                </div>
+            
+                <!-- Grey Line -->
+                <hr class="mb-4">
+            
+                <!-- Contact Person, Phone No, Email, Address -->
+                <div class="mb-3" >
+                    <!-- Contact Person -->
+                    <p class="mb-3"><strong>Contact Person:</strong> Rania Karim</p>
+                    <!-- Phone No -->
+                    <p class="mb-3"><strong>Phone No:</strong> 019-3456677</p>
+                    <!-- Email -->
+                    <p class="mb-3"><strong>Email:</strong> rani@testemail.com</p>
+                    <!-- Address -->
+                    <p class="mb-0"><strong>Address:</strong> 123, Lot 3, Meriah Mall, Taman Melawati, 50000 Kuala Lumpur</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-4">
+            <div class="container mt-4 white-rounded-container" style="margin-left: 30px; padding: 15px;">
+                <!-- Title: Terminal -->
+                <h5 class="mb-3">Terminal</h5>
+            
+                <!-- Grey Line -->
+                <hr class="mb-4">
+            
+                <!-- Row with Column: Icon Profile and Profile Name -->
+                <div class="row d-flex align-items-center" style="padding: 15px;">
+                    <div class="col-2 align-items-center">
+                        <div class="container mt-0 p-4 rounded" style="background-color : orange;">
+                          
+                        </div>
+                    </div>
+                
+                    <div class="col-5">
+                        <!-- Profile Name -->
+                        <p class="mb-0">100513</p>
+                        <p class="custom-quick-stat-p" style="font-weight: normal; font-size: 12px; color: grey;">EPOS</p>
+                    </div>
+
+                    <div class="col-3">
+                        <div class="row d-flex align-items-center">
+                            <div class="col-1">
+                                <div class="container mt-0 p-1 rounded" style="background-color: orange;">
+                                    <!-- Content goes here -->
+                                </div>
+                            </div>
+                            <div class="col-1">
+                                <p class="mb-1">Active</p>
+                            </div>
+                        </div>
+                        <!-- Profile Name -->
+                        
+                        
+                    </div>
+                </div>
+            
+               
+            </div>
+        </div>
+    </div>
+    
+
+    
+    
+</div>
+
+
+<!-- ##################################################################################### -->
+<!-- Script BAR GRAPH -->
+
+<script>
+    // Sample data for the bar graph
+    var days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
+    var dates = ['2023-01-02', '2023-01-03', '2023-01-04', '2023-01-05', '2023-01-06', '2023-01-07', '2023-01-08'];
+    var salesData = [150, 220, 180, 250, 200, 300, 280];
+
+    // Chart.js configuration
+    var ctx = document.getElementById('salesChart').getContext('2d');
+    var salesChart = new Chart(ctx, {
+        type: 'bar',
+        data: {
+            //labels: days.map((day, index) => day + '\n' + dates[index]),
+            labels: days.map((day, index) => day),
+            datasets: [{
+                label: 'Weekly Sales (RM)',
+                data: salesData,
+                backgroundColor: 'rgba(75, 192, 192, 0.6)',
+                borderColor: 'rgba(75, 192, 192, 1)',
+                borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+                y: {
+                    beginAtZero: true
+                }
+            }
+        }
+    });
+</script>
+
+<script>
+    // Function to toggle the dropdown menu
+    function toggleDropdown() {
+        var logoutMenu = document.getElementById('logoutMenu');
+        logoutMenu.style.display = (logoutMenu.style.display === 'none' || logoutMenu.style.display === '') ? 'block' : 'none';
+    }
+</script>
+    
+
+<!-- Bootstrap JS and Popper.js (required for Bootstrap components) -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<!-- Add any additional scripts here -->
+
+</body>
+</html>

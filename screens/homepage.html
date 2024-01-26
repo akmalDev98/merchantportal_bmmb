@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bank Muamalat Merchant Portal</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/mdb-ui-kit@3.11.0/dist/css/mdb.min.css" rel="stylesheet"/> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Include Chart.js library -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/mdb-ui-kit@3.11.0/dist/js/mdb.min.js"></script> -->
+
+    <link rel="stylesheet" href="../stylesheet/homepage.css"> <!-- Import the CSS file -->
+
+    <!-- Add any additional stylesheets or scripts here -->
+    <style>
+        
+     
+    </style>
+</head>
+<body>
+
+<!-- Sidebar -->
+<div class="sidebar">
+
+    <img class="img-fluid mx-auto d-block rounded-image mb-4" src="../assets/new_bmmb_eng_logo.png">
+    
+    <a href="#" class="active" onclick="loadContent('sidebar_menu/homepage.html')">
+        <div class="vertical-center">
+            <img src="../assets/home.png" alt="Home Icon" width="20" height="20">
+            <span class="ml-2">Home</span>
+        </div>
+    </a>
+
+    <a href="#">
+        <div class="vertical-center">
+            <img src="../assets/transaction.png" alt="Transaction Icon" width="20" height="20">
+            <span class="ml-2">Transactions</span>
+        </div>
+    </a>
+
+    <a href="#">
+        <div class="vertical-center">
+            <img src="../assets/profile.png" alt="Profile Icon" width="20" height="20">
+            <span class="ml-2">Profile</span>
+        </div>
+    </a>
+
+    <a href="#">
+        <div class="vertical-center">
+            <img src="../assets/payment.png" alt="Payment Icon" width="20" height="20">
+            <span class="ml-2">Payment Link</span>
+        </div>
+    </a>
+    
+</div>
+
+<!-- Content -->
+<div class="content">
+
+    <!-- HEADER GRADIENT -->
+    
+    <div class="gradient-container">
+        <!-- Search Input -->
+        <input type="text" class="search-input" placeholder="Search...">
+
+        <div class="container" style="flex: 1;"></div>
+
+        <!-- Profile & Logout -->
+        <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                <img src="../assets/profile.png" alt="Profile Icon" width="25" height="25" style="margin-right: 10px;">
+                <span class="me-2">RaniaBoutique</span> <!-- Add spacing between text and icon -->
+               
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+              <li><a class="dropdown-item" href="#">Logout</a></li>
+            </ul>
+        </div>
+
+        
+          
+    </div>
+   
+
+   
+    <!-- TITLE -->
+    <div class="mt-5">
+        <div class="row">
+             <!-- TITLE -->
+             <h4 style="color: #022F86; font-family: 'Montserrat', sans-serif; font-weight: bold; font-size: 32px; margin-left: 30px;">Bank Muamalat Merchant Portal</h4>
+        </div>
+    </div>
+
+    <!-- DROPDOWN -->
+
+    <div class="mt-4" style="margin-left: 30px;">
+        <div class="row">
+            <!-- First column with label -->
+            <div class="col-md-2" style="padding-top: 5px;">
+                <div class="form-group">
+                    <label for="merchantId">Merchant ID:</label>
+                </div>
+            </div>
+            
+            <!-- Second column with dropdown -->
+            <div class="col-md-4">
+                <div class="form-group">
+                    <!-- <select class="form-control" id="merchantId" name="merchantId" data-bs-toggle="dropdown" aria-expanded="false">
+                        <option value="10001234">10001234</option>
+                        <option value="10001235">10001235</option>
+                        <option value="10001236">10001236</option>
+                        <option value="10001237">10001237</option>
+                    </select> -->
+                    <div class="dropdown">
+                        <a class="btn btn-info dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                          Select Merchant ID
+                        </a>
+                      
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                          <li><a class="dropdown-item" href="#">10001234</a></li>
+                          <li><a class="dropdown-item" href="#">10001235</a></li>
+                          <li><a class="dropdown-item" href="#">10001236</a></li>
+                          <li><a class="dropdown-item" href="#">10001237</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- QUICK STATS -->
+    <div class=" mt-1" style="margin-left: 30px;">
+        <div class="row">
+            <!-- First box -->
+            <div class="col-md-3 custom-container" style="background-color: white;">
+                <p class="custom-quick-stat-p" style="font-weight: 300; font-size: 20px;">Total Transactions</p>
+                <p class="custom-quick-stat-p" style="font-weight: bold; font-size: 28px;">13,381</p>
+                <p class="custom-quick-stat-p" style="font-weight: normal; font-size: 14px; color: grey;">1st January 2024 - Present</p>
+            </div>
+            
+            
+            <!-- Second box -->
+            <div class="col-md-3 custom-container" style="background-color: white;">
+                <p class="custom-quick-stat-p" style="font-weight: 300; font-size: 20px;">Total Volume</p>
+                <p class="custom-quick-stat-p" style="font-weight: bold; font-size: 28px;">RM 45,131.10</p>
+                <p class="custom-quick-stat-p" style="font-weight: normal; font-size: 14px; color: grey;">1st January 2024 - Present</p>
+            </div>
+
+    </div>
+    
+    <!-- BAR GRAPH & PIE CHART -->
+    <div class="container mt-4">
+        <div class="row">
+            <!-- Bar Graph -->
+            <div class="col-md-7 mt-0 p-3 chart-container white-rounded-container-sales-performance">
+                <h4 class="mb-4" style="font-size: 20px;">My Sales Performance</h4>
+                <canvas id="salesChart"></canvas>
+            </div>
+
+
+            <!-- Line Chart Volumes -->
+            <div class="col-md-4 ml-3 p-3 chart-container white-rounded-container">
+                
+                <h4 class="mb-2" style="font-size: 20px;">Volumes</h4>
+                <div style="margin-top: 5px;">
+                    <canvas id="volumesComparisonChart"></canvas>
+                </div>
+
+                <h4 class="mb-2 mt-3" style="font-size: 20px;">Transactions</h4>
+                <div style="margin-top: 5px;">
+                    <canvas id="transactionsComparisonChart"></canvas>
+                </div>
+
+                <h4 class="mb-2 mt-3" style="font-size: 20px;">MDR</h4>
+                <div style="margin-top: 5px;">
+                    <!-- <canvas id="myPieChart"></canvas> -->
+                    <canvas id="mdrComparisonChart"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+
+     <!-- <div class="row-container">
+                    <p class="custom-quick-stat-p" style="font-weight: normal; font-size: 14px; color: grey; margin-top: 0; margin-bottom: 0;">Increase from December</p>
+                    <div style="font-size: 14px; color: green; margin-left: 8px;">
+                        <span style="display: inline-block;">&#x2191;</span> 5%
+                    </div>
+                </div> -->
+    
+
+    <!-- TABLE -->
+    <div class="container">
+    
+        <div class="row">
+            <div class="col-md-12 white-rounded-container mt-4">
+                <h4 class="mb-4" style="font-size: 20px;">Transaction Data</h4>
+                <table class="table table-hover">
+                    <thead class="thead-light">
+                        <tr>
+                            <th style="padding: 15px">Merchant ID</th>
+                            <th style="padding: 15px">Terminal ID</th>
+                            <th style="padding: 15px">RRN</th>
+                            <th style="padding: 15px">Approval Code</th>
+                            <th style="padding: 15px">Amount</th>
+                            <th style="padding: 15px">Date-Time</th>
+                            <th style="padding: 15px">Status</th>
+                        </tr>
+                    </thead>
+                    <tbody id="transactionTableBody">
+                        <!-- Data will be dynamically added here using script -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        
+    </div>
+    
+</div>
+
+
+<!-- ##################################################################################### -->
+<!-- Script BAR GRAPH -->
+<script>
+    // Sample data for the bar graph
+    var days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
+    var dates = ['2023-01-02', '2023-01-03', '2023-01-04', '2023-01-05', '2023-01-06', '2023-01-07', '2023-01-08'];
+    var salesData = [150, 220, 180, 250, 200, 300, 280];
+
+    // Chart.js configuration
+    var ctx = document.getElementById('salesChart').getContext('2d');
+    var salesChart = new Chart(ctx, {
+        type: 'bar',
+        data: {
+            //labels: days.map((day, index) => day + '\n' + dates[index]),
+            labels: days.map((day, index) => day),
+            datasets: [{
+                label: 'Weekly Sales (RM)',
+                data: salesData,
+                backgroundColor: [
+                '#022F86', // Default color
+                '#022F86', // Default color
+                '#022F86', // Default color
+                '#022F86', // Default color
+                '#022F86', // Default color
+                '#022F86', // Default color
+                '#FF8145', // Custom color for the last bar
+            ],
+                borderColor: 'rgba(75, 192, 192, 1)',
+                borderWidth: 1,
+                borderRadius: 10,
+            }]
+        },
+        options: {
+            scales: {
+                y: {
+                    beginAtZero: true
+                }
+            }
+        }
+    });
+</script>
+
+<!-- ##################################################################################### -->
+<!-- Script PIE CHART -->
+<script>
+    // Sample data for the pie chart
+    var data = {
+        datasets: [{
+            data: [30, 40, 30],
+            backgroundColor: ['#FF6384', '#36A2EB', '#FFCE56']
+        }],
+        labels: ['Volume', 'Transaction', 'MDR'],
+        
+    };
+
+    // Chart.js configuration
+    var ctx = document.getElementById('myPieChart').getContext('2d');
+    var myPieChart = new Chart(ctx, {
+        type: 'pie',
+        data: data,
+        options: {
+            responsive: true,
+            plugins: {
+            legend: {
+                position: 'bottom',
+            },
+            title: {
+                display: false,
+                text: 'My Fee Based'
+            }
+            }
+        },
+    });
+</script>
+
+<!-- ##################################################################################### -->
+<!-- Script LINE CHART - volumes -->
+<script>
+
+    document.addEventListener("DOMContentLoaded", function() {
+        // Your Chart.js code here
+        // Data for the line chart
+            const data = {
+                labels: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+                datasets: [
+                    {
+                        label: "This Week",
+                        data: [50, 70, 60, 80, 75, 90, 85],
+                        backgroundColor: 'rgba(105, 0, 132, .2)',
+                        borderColor: 'rgba(255, 99, 132, 1)',
+                        borderWidth: 2,
+                        fill: false,
+                        tension: 0.4
+                    },
+                    {
+                        label: "Previous Week",
+                        data: [40, 60, 50, 70, 65, 80, 75],
+                        backgroundColor: 'rgba(0, 137, 132, .2)',
+                        borderColor: 'rgba(50, 150, 255, 1)',
+                        borderWidth: 2,
+                        fill: false,
+                        tension: 0.4
+                    }
+                ]
+            };
+
+            // Chart options
+            const options = {
+                responsive: true,
+                scales: {
+                    xAxes: [{
+                        type: 'linear',
+                        position: 'bottom'
+                    }],
+                    yAxes: [{
+                        type: 'linear',
+                        position: 'left'
+                    }]
+                }
+            };
+
+            // Create the line chart
+            const ctx = document.getElementById('volumesComparisonChart').getContext('2d');
+            const salesComparisonChart = new Chart(ctx, {
+                type: 'line',
+                data: data,
+                options: options
+            });
+    });
+    
+</script>
+
+<!-- ##################################################################################### -->
+<!-- Script LINE CHART - transactions -->
+<script>
+
+    document.addEventListener("DOMContentLoaded", function() {
+        // Your Chart.js code here
+        // Data for the line chart
+            const data = {
+                labels: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+                datasets: [
+                    {
+                        label: "This Week",
+                        data: [50, 70, 60, 80, 75, 90, 85],
+                        backgroundColor: 'rgba(105, 0, 132, .2)',
+                        borderColor: 'rgba(255, 99, 132, 1)',
+                        borderWidth: 2,
+                        fill: false,
+                        tension: 0.4
+                    },
+                    {
+                        label: "Previous Week",
+                        data: [40, 60, 50, 70, 65, 80, 75],
+                        backgroundColor: 'rgba(0, 137, 132, .2)',
+                        borderColor: 'rgba(50, 150, 255, 1)',
+                        borderWidth: 2,
+                        fill: false,
+                        tension: 0.4
+                    }
+                ]
+            };
+
+            // Chart options
+            const options = {
+                responsive: true,
+                scales: {
+                    xAxes: [{
+                        type: 'linear',
+                        position: 'bottom'
+                    }],
+                    yAxes: [{
+                        type: 'linear',
+                        position: 'left'
+                    }]
+                }
+            };
+
+            // Create the line chart
+            const ctx = document.getElementById('transactionsComparisonChart').getContext('2d');
+            const salesComparisonChart = new Chart(ctx, {
+                type: 'line',
+                data: data,
+                options: options
+            });
+    });
+    
+</script>
+
+<!-- ##################################################################################### -->
+<!-- Script LINE CHART - mdr -->
+<script>
+
+    document.addEventListener("DOMContentLoaded", function() {
+        // Your Chart.js code here
+        // Data for the line chart
+            const data = {
+                labels: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+                datasets: [
+                    {
+                        label: "This Week",
+                        data: [50, 70, 60, 80, 75, 90, 85],
+                        backgroundColor: 'rgba(105, 0, 132, .2)',
+                        borderColor: 'rgba(255, 99, 132, 1)',
+                        borderWidth: 2,
+                        fill: false,
+                        tension: 0.4
+                    },
+                    {
+                        label: "Previous Week",
+                        data: [40, 60, 50, 70, 65, 80, 75],
+                        backgroundColor: 'rgba(0, 137, 132, .2)',
+                        borderColor: 'rgba(50, 150, 255, 1)',
+                        borderWidth: 2,
+                        fill: false,
+                        tension: 0.4
+                    }
+                ]
+            };
+
+            // Chart options
+            const options = {
+                responsive: true,
+                scales: {
+                    xAxes: [{
+                        type: 'linear',
+                        position: 'bottom'
+                    }],
+                    yAxes: [{
+                        type: 'linear',
+                        position: 'left'
+                    }]
+                }
+            };
+
+            // Create the line chart
+            const ctx = document.getElementById('mdrComparisonChart').getContext('2d');
+            const salesComparisonChart = new Chart(ctx, {
+                type: 'line',
+                data: data,
+                options: options
+            });
+    });
+    
+</script>
+  
+
+
+<!-- ##################################################################################### -->
+<!-- Script TABLE -->
+<script>
+    // Sample data, replace this with your actual data
+    var transactions = [
+        { merchantId: 'M123', terminalId: 'T001', rrn: '123456789', approvalCode: '987654', amount: '$100.00', dateTime: '2023-01-01 12:00 PM', status: 'Rejected' },
+        { merchantId: 'M123', terminalId: 'T001', rrn: '123456789', approvalCode: '987654', amount: '$100.00', dateTime: '2023-01-01 12:00 PM', status: 'Approved' },
+        { merchantId: 'M123', terminalId: 'T001', rrn: '123456789', approvalCode: '987654', amount: '$100.00', dateTime: '2023-01-01 12:00 PM', status: 'Approved' },
+        { merchantId: 'M123', terminalId: 'T001', rrn: '123456789', approvalCode: '987654', amount: '$100.00', dateTime: '2023-01-01 12:00 PM', status: 'Processing' },
+        { merchantId: 'M123', terminalId: 'T001', rrn: '123456789', approvalCode: '987654', amount: '$100.00', dateTime: '2023-01-01 12:00 PM', status: 'Rejected' },
+        { merchantId: 'M123', terminalId: 'T001', rrn: '123456789', approvalCode: '987654', amount: '$100.00', dateTime: '2023-01-01 12:00 PM', status: 'Processing' },
+        { merchantId: 'M123', terminalId: 'T001', rrn: '123456789', approvalCode: '987654', amount: '$100.00', dateTime: '2023-01-01 12:00 PM', status: 'Approved' },
+        { merchantId: 'M123', terminalId: 'T001', rrn: '123456789', approvalCode: '987654', amount: '$100.00', dateTime: '2023-01-01 12:00 PM', status: 'Processing' },
+        { merchantId: 'M123', terminalId: 'T001', rrn: '123456789', approvalCode: '987654', amount: '$100.00', dateTime: '2023-01-01 12:00 PM', status: 'Processing' },
+        { merchantId: 'M123', terminalId: 'T001', rrn: '123456789', approvalCode: '987654', amount: '$100.00', dateTime: '2023-01-01 12:00 PM', status: 'Approved' },
+        { merchantId: 'M123', terminalId: 'T001', rrn: '123456789', approvalCode: '987654', amount: '$100.00', dateTime: '2023-01-01 12:00 PM', status: 'Approved' },
+        { merchantId: 'M123', terminalId: 'T001', rrn: '123456789', approvalCode: '987654', amount: '$100.00', dateTime: '2023-01-01 12:00 PM', status: 'Approved' },
+        { merchantId: 'M123', terminalId: 'T001', rrn: '123456789', approvalCode: '987654', amount: '$100.00', dateTime: '2023-01-01 12:00 PM', status: 'Approved' },
+        { merchantId: 'M123', terminalId: 'T001', rrn: '123456789', approvalCode: '987654', amount: '$100.00', dateTime: '2023-01-01 12:00 PM', status: 'Approved' },
+        { merchantId: 'M123', terminalId: 'T001', rrn: '123456789', approvalCode: '987654', amount: '$100.00', dateTime: '2023-01-01 12:00 PM', status: 'Approved' },
+        { merchantId: 'M123', terminalId: 'T001', rrn: '123456789', approvalCode: '987654', amount: '$100.00', dateTime: '2023-01-01 12:00 PM', status: 'Approved' },
+        { merchantId: 'M123', terminalId: 'T001', rrn: '123456789', approvalCode: '987654', amount: '$100.00', dateTime: '2023-01-01 12:00 PM', status: 'Approved' },
+        // Add more data as needed
+    ];
+
+    // Function to dynamically populate the table
+    function populateTable(pageNumber, pageSize) {
+        var tableBody = document.getElementById('transactionTableBody');
+
+        // Clear existing rows
+        tableBody.innerHTML = '';
+
+        var startIndex = (pageNumber - 1) * pageSize;
+        var endIndex = startIndex + pageSize;
+        var currentTransactions = transactions.slice(startIndex, endIndex);
+
+
+        // Populate the table with data
+        currentTransactions.forEach(function(transaction) {
+            var row = tableBody.insertRow();
+            //row.classList.add('text-center'); 
+
+            var keys = Object.keys(transaction);
+
+            keys.forEach(function(key) {
+                if (key !== 'status') {
+                    var cell = row.insertCell();
+                    cell.textContent = transaction[key];
+
+                    // Add padding to each cell
+                    cell.style.padding = '20px';
+                }
+            });
+
+            var statusCell = row.insertCell();
+            statusCell.classList.add('text-center');
+            var statusCircle = document.createElement('div');
+            statusCircle.classList.add('status-circle');
+            statusCircle.classList.add('mt-3');
+            statusCircle.classList.add('mr-2')
+
+
+            if (transaction.status.toLowerCase() === 'approved') {
+                statusCircle.classList.add('status-approved');
+            } else if (transaction.status.toLowerCase() === 'rejected') {
+                statusCircle.classList.add('status-rejected');
+            } else if (transaction.status.toLowerCase() === 'processing') {
+                statusCircle.classList.add('status-processing');
+            }
+
+            statusCell.appendChild(statusCircle);
+
+            var statusText = document.createElement('span');
+            statusText.textContent = transaction.status;
+            statusText.style.color = getComputedStyle(statusCircle).backgroundColor; // Set the text color to the background color of statusCircle
+            statusCell.appendChild(statusText);
+        });
+    }
+
+    // Call the function to initially populate the table
+    // Call the function to initially populate the table
+    populateTable(1, 15);
+
+    // Function to handle page changes
+    function changePage(pageNumber, pageSize) {
+        populateTable(pageNumber, pageSize);
+    }
+</script>
+
+<script>
+    // Function to toggle the dropdown menu
+    function toggleDropdown() {
+        var logoutMenu = document.getElementById('logoutMenu');
+        logoutMenu.style.display = (logoutMenu.style.display === 'none' || logoutMenu.style.display === '') ? 'block' : 'none';
+    }
+</script>
+    
+
+<!-- Bootstrap JS and Popper.js (required for Bootstrap components) -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<!-- Add any additional scripts here -->
+
+</body>
+</html>

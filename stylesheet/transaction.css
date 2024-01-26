@@ -1,0 +1,170 @@
+.status-circle {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.status-approved {
+    background-color: #83BF6E;
+}
+
+.status-rejected {
+    background-color: #C70600;
+}
+
+.status-processing {
+    background-color: #6EA2BF;
+}
+
+:root {
+    --custom-color: #e24f0b;
+  }
+
+
+body {
+    padding-top: 0px; /* Adjust based on the height of your sidebar */
+    background-color: #F7F7F7;
+}
+
+.sidebar {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #ffffff;
+    padding-top: 20px;
+ 
+}
+
+.content {
+    
+    padding-left: 250px; /* Adjust the padding to match the sidebar width */
+    height: 100%;
+}
+
+.gradient-container {
+    display: flex;
+    justify-content: flex-start; /* Align to the left */
+    align-items: center;
+    background: linear-gradient(to right, #FEC95D, #FF7A39);
+    padding: 20px; /* Added padding for better visual */
+    padding-left: 30px;
+}
+
+.custom-container {
+    height: 25%;
+    color: white;
+    padding: 10px;
+    text-align: left;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+.custom-quick-stat-p {
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.row-container {
+    display: flex;
+    align-items: center;
+}
+
+
+.search-input {
+    padding: 10px 10px 10px 40px; /* Added left padding for the icon */
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    width: 300px;
+    outline: none;
+    background-image: url('../assets/search-icon.png'); /* Replace with your icon image path */
+    background-size: 20px; /* Adjust the size of the icon */
+    background-repeat: no-repeat;
+    background-position: 10px center;
+   
+}
+
+.profile-container {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    position: relative;
+    background-color: white;
+    padding: 10px 10px 10px 10px; /* Added left padding for the icon */
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+}
+
+.profile-container img {
+    margin-right: 10px;
+}
+
+.vertical-center {
+    display: flex;
+    align-items: center;
+    height: 50px;
+}
+
+
+.white-rounded-container {
+    padding: 10px; 
+    background-color: white;
+    border-radius: 10px;
+    /* height: 50px; */
+}
+
+.profile-rounded-container {
+            background-color: white;
+            border-radius: 10px;
+            padding: 10px;
+            display: none;
+            position: absolute;
+            right: 0;
+            top: 60px; /* Adjust the top position as needed */
+            z-index: 1;
+        }
+
+/* Default styles for sidebar links */
+.sidebar a {
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #93989A; /* Default text color */
+}
+
+/* Active state for sidebar link */
+.sidebar a.active {
+    background-color: #FFE3DB66; /* Active background color */
+    color: #FF5100; /* Active text color */
+}
+
+/* Hover effect for sidebar links (optional) */
+.sidebar a:hover {
+    background-color: #f5f5f5; /* Hover background color */
+}
+
+  /* Add custom styles here */
+  .dropdown button.btn {
+    background-color: white;
+    color: black;
+    border: 1px solid #ccc; /* Add border for better visibility */
+}
+
+.dropdown-menu {
+    background-color: white;
+    color: black;
+}
+
+.dropdown-menu a {
+    color: black;
+}
+
+.dropdown-menu a:hover {
+    background-color: #e6e6e6; /* Add hover background color */
+}
